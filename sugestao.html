@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto final do curso de HTML DIO.me - Wikipédia com Layout Moderno.">
+    <title>Everybody hates Chris</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="assets/images/logo.png" width="200" alt="Logo" />
+        </figure>
+    </header>
+
+    <div class="bar"></div>
+
+    <main class="content">
+        <aside class="sidebar">
+            <h2>Séries de TV</h2>
+            <nav>
+                <ul>
+                    <li><a href="friends.html">Friends</a></li>
+                    <li><a href="game-of-thrones.html">Game of Thrones</a></li>
+                    <li><a href="everybody-hates-chris.html">Everybody Hates Chris</a></li>
+                    <li><a href="how-i-met-your-mother.html">How I Met Your Mother</a></li>
+                    <li><a id="espaco" href="sugestao.html">Duvidas e Segestões</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="main">
+            <form action="" method="get" class="formulario">
+                <fieldset>
+                    <legend>Entre em contato</legend>
+                    <label class="linha" for="name">Nome:
+                        <input type="text" minlength="8" placeholder="nome completo" required>
+                    </label>
+                    <label class="linha" for="email">E-mail:
+                        <input type="email" placeholder="meuemail@gmail.com" required>
+                    </label>
+                    <label class="linha" for="text">Motivo:
+                        <select name="text" id="text" required>
+                            <option value="">Selecione o motivo do contato:</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="reportar">Reportar erro</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </label>
+                    <label class="linha" for="mensagem">Mensagem:</label>
+                    <textarea required name="message" id="message" rows="5" cols="40" minlength="10"
+                        placeholder="Digite sua mensagem aqui"></textarea>
+                    <button class="botoes" type="reset">Limpar</button>
+                    <button class="botoes" type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <aside class="contato">
+            <h2><strong>Contato</strong></h2>
+            <p><strong>Endereço:</strong></p>
+            <address>Rua das Estrelas, 123 - Bairro Aurora - Cidade da Lua - 99999-000 - Brasil</address>
+            <p><strong>Telefone:</strong> +55 (11) 91234-5678</p>
+            <p><strong>E-mail:</strong> contatowikepedia@gmail.com</p>
+            </nav>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Site de estudo sobre HTML</p>
+        <p>Textos da Wikipédia usado para fins educativos. Fonte:
+            <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank"
+                rel="noopener noreferrer">Wikipedia</a>
+        </p>
+        <p>Curso HTML: <a href="https://www.dio.me/" target="_blank" rel="noopener noreferrer">Dio.me</a></p>
+        <p>Este conteúdo foi adaptado de <a href="https://pt.wikipedia.org/wiki/Conteudo" target="_blank"
+                rel="noopener noreferrer">Wikipedia</a>, sob licença CC BY-SA 4.0. Modificações foram feitas para fins
+            educativos.</p>
+    </footer>
+</body>
+
+</html>

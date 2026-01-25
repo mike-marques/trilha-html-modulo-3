@@ -1,16 +1,28 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
+
+ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
 .bar {
     background-color: #f9f9fb;
-    padding:15px;
+    padding: 15px;
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
 }
+
 .content {
     max-width: 1440px;
     margin: auto;
@@ -18,21 +30,231 @@ a { color:blue; text-decoration: none;}
     display: grid;
     gap: 3rem;
     grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
     padding-left: 1rem;
     padding-right: 1rem;
+    background-color: #F0F0F0;
 }
+
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    text-align: center;
+    background: linear-gradient(to bottom, blue, lightblue, white);
 }
+
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
+    background: linear-gradient(to left, white, lightblue, blue);
+    font-size: 18px;
 }
+
+.anchors ul li :hover {
+    color: orangered;
+}
+
+.anchors ul li {
+    margin-bottom: 15px;
+}
+
+.anchors h2 {
+
+    padding-bottom: 20px;
+}
+
+#espaco {
+    display: inline-block;
+    margin-top: 30px;
+}
+
 .sidebar {
     border-right: solid 1px #cdcdcd;
+    background: linear-gradient(to right, white, lightblue, blue);
+    font-size: 18px;
+
 }
+
+.sidebar ul li :hover {
+    color: orangered;
+}
+
 figure {
     text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1rem;
+    min-height: 60px;
+    background: linear-gradient(to bottom, blue, lightblue, white);
+}
+
+hr.personalizado {
+    width: 100%;
+    margin: 30px auto;
+    border: none;
+    border-top: 1px dashed blue
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: none;
+}
+
+tr th,
+tr td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar h2 {
+    padding-bottom: 20px;
+}
+
+main h1 {
+    padding-bottom: 20px;
+}
+
+img {
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+table caption {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.contato p {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+address {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.contato {
+    background: linear-gradient(to left, white, lightblue, blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contato h2 {
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+legend {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+label {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.formulario textarea {
+    width: 90%;
+    min-height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+}
+
+.formulario textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 4px #4a90e2;
+}
+
+.formulario button {
+    margin-top: 15px;
+    width: 80%;
+    padding: 10px;
+    background: #4a90e2;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.botoes {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.formulario button:hover {
+    background: #357ab8;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.linha {
+    gap: 15px;
+}
+
+.linha input,
+.linha textarea {
+    width: 300px;
+    height: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-weight: normal;
+}
+
+select {
+    width: 310px;
+    height: 35px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-weight: normal;
 }
