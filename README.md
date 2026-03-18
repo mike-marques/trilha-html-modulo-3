@@ -30,4 +30,12 @@ O site apresenta informações sobre algumas séries de TV populares:
 Obs: Este conteúdo foi adaptado da [Wikipedia](https://pt.wikipedia.org/wiki/Conteudo), sob licença **CC BY-SA 4.0**. Modificações foram feitas para fins educativos.
 
 Para mais informações sobre os links usados no código, consulte os próprios arquivos HTML/CSS do projeto.
+
+## Licenças
+
+Este projeto possui diferentes licenças para diferentes conteúdos:
+
+- **Conteúdo recente (textos/imagens/etc.)**: CC BY-SA 4.0 — veja [LICENSE-CC-BY-SA-4.0](LICENSE-CC-BY-SA-4.0)  
+- **Conteúdo intermediário/antigo**: CC BY-SA 3.0 — veja [LICENSE-CC-BY-SA-3.0](LICENSE-CC-BY-SA-3.0)  
+- **Conteúdo mais antigo ou legado**: CC BY-SA 2.0 — veja [LICENSE-CC-BY-SA-2.0](LICENSE-CC-BY-SA-2.0)
  
